@@ -3,7 +3,7 @@ import ReactWeather, { useVisualCrossing } from 'react-open-weather';
 
 function ShowWeather() {
     const { data } = useVisualCrossing({
-        key: 'W8KUDHKPGT97M5GTAUTA4SBRS',
+        key: 'W8KUDHKPGT97M5GTAUTA4SBRS', //unsafe!!! put in env file
         lat: '52.4899',
         lon: '13.3532',
         lang: 'en',
@@ -23,19 +23,21 @@ function ShowWeather() {
     );
 }
 
+const borderColor = '#35393c';
+const backgroundColor = '#42858c';
+
 const customStyles = {
     fontFamily: 'Helvetica, sans-serif',
-    gradientStart: 'pink',
-    gradientMid: 'pink',
-    gradientEnd: 'deeppink',
-    locationFontColor: 'deeppink',
-    todayTempFontColor: 'deeppink',
+    gradientStart: { backgroundColor },
+    gradientMid: { backgroundColor },
+    gradientEnd: { borderColor },
+    locationFontColor: { borderColor },
+    todayTempFontColor: { borderColor },
     todayDateFontColor: 'black',
-    todayDateFontSize: '0px',
     todayRangeFontColor: 'black',
-    todayDescFontColor: 'deeppink',
-    todayInfoFontColor: 'deeppink',
-    todayIconColor: 'deeppink',
+    todayDescFontColor: { borderColor },
+    todayInfoFontColor: { borderColor },
+    todayIconColor: { borderColor },
     forecastBackgroundColor: '#FFF',
     forecastSeparatorColor: '#DDD',
     forecastDateColor: '#777',

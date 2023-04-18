@@ -2,7 +2,8 @@ import './App.css';
 import DateAndTime from './DateTime';
 import Google from './Google';
 import ShowWeather from './Weather';
-import MakeNewList from './LinkList';
+import AddNewLink from './AddLink';
+import ToDoList from './toDoList';
 
 const name = 'Rio';
 
@@ -17,8 +18,12 @@ function App() {
                     <div id="weatherDiv">
                         <ShowWeather />
                     </div>
-                    <div>
-                        <MakeNewList />
+                    <div id="linkList">
+                        <h3>Links</h3>
+                        <AddNewLink />
+                    </div>
+                    <div id="toDo">
+                        <ToDoList />
                     </div>
                 </div>
             </header>
