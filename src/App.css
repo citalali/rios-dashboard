@@ -1,28 +1,40 @@
 :root {
-    --border-color: #35393c;
-    --background-color: #42858c;
+    --border-color: #393646;
+    --background-color: #4f4557;
+    --highlight: #f4eee0;
+    --mid: #6d5d6e;
 }
 
 .App {
     text-align: center;
+    color: var(--highlight);
+}
+
+.textColour {
+    color: var(--highlight);
 }
 
 #mainDiv {
     width: 70%;
 }
 
-#toDo {
+.toDoComponent {
+    position: absolute;
     bottom: 0;
     right: 0;
     border: solid 2px var(--border-color);
     padding: 7px;
+    width: 50%;
 }
-
+.singleToDos {
+    border: solid 3px var(--border-color);
+    margin-bottom: 1%;
+}
 #weatherDiv {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #61dafb;
+    background-color: var(--mid);
     zoom: 0.6;
 }
 
@@ -39,17 +51,17 @@
 }
 
 button {
-    background-color: var(--background-color);
-    color: black;
-    border-color: var(--border-color);
+    background-color: var(--mid);
+    color: var(--highlight);
+    border-color: var(--highlight);
     border-radius: 8px;
     border-width: 5px;
     margin: 5px;
 }
 
 input {
-    color: var(--border-color);
-    background-color: var(--background-color);
+    color: var(--highlight);
+    background-color: var(--mid);
     border-color: var(--border-color);
     height: 30px;
     width: 60%;
@@ -63,9 +75,9 @@ input {
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: var(--border-color);
+    color: var(--highlight);
 }
 
 .App-link {
-    color: #61dafb;
+    color: var(--highlight);
 }

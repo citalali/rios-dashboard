@@ -4,25 +4,24 @@ import Google from './Google';
 import ShowWeather from './Weather';
 import AddNewLink from './AddLink';
 import ToDoList from './toDoList';
-
-const name = 'Rio';
+import Greeting from './components/Greeting';
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
                 <div id="mainDiv">
-                    <h1>Hey {name}</h1>
+                    <Greeting />
                     <Google />
                     <DateAndTime />
                     <div id="weatherDiv">
                         <ShowWeather />
                     </div>
                     <div id="linkList">
-                        <h3>Links</h3>
+                        <h3 className="textColour">Links</h3>
                         <AddNewLink />
                     </div>
-                    <div id="toDo">
+                    <div>
                         <ToDoList />
                     </div>
                 </div>

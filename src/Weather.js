@@ -23,27 +23,29 @@ function ShowWeather() {
     );
 }
 
-const borderColor = '#35393c';
-const backgroundColor = '#42858c';
+const borderColor = '#393646';
+const backgroundColor = '#4f4557';
+const highlight = '#f4eee0';
+const mid = '#6d5d6e';
 
 const customStyles = {
     fontFamily: 'Helvetica, sans-serif',
-    gradientStart: { backgroundColor },
+    gradientStart: { highlight },
     gradientMid: { backgroundColor },
     gradientEnd: { borderColor },
-    locationFontColor: { borderColor },
-    todayTempFontColor: { borderColor },
-    todayDateFontColor: 'black',
-    todayRangeFontColor: 'black',
-    todayDescFontColor: { borderColor },
-    todayInfoFontColor: { borderColor },
+    locationFontColor: { highlight },
+    todayTempFontColor: { highlight },
+    todayDateFontColor: { highlight },
+    todayRangeFontColor: { highlight },
+    todayDescFontColor: { highlight },
+    todayInfoFontColor: { highlight },
     todayIconColor: { borderColor },
-    forecastBackgroundColor: '#FFF',
-    forecastSeparatorColor: '#DDD',
-    forecastDateColor: '#777',
-    forecastDescColor: '#777',
-    forecastRangeColor: '#777',
-    forecastIconColor: '#4BC4F7',
+    forecastBackgroundColor: { mid },
+    forecastSeparatorColor: { highlight },
+    forecastDateColor: { highlight },
+    forecastDescColor: { highlight },
+    forecastRangeColor: { highlight },
+    forecastIconColor: { highlight },
 };
 
 export default ShowWeather;

@@ -5,7 +5,7 @@ const today = new Date();
 
 function DateAndTime() {
     return (
-        <div>
+        <div className="textColour">
             <p>Today is the {today.toLocaleDateString()}</p>
             <p>
                 <Clock format={'HH:mm:ss'} ticking={true} timezone={'Europe/Berlin'} />

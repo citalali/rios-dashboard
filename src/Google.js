@@ -2,7 +2,7 @@ import React from 'react';
 
 function Google() {
     return (
-        <div>
+        <div className="textColour">
             <form
                 action="https://www.google.com/search"
                 class="searchform"
@@ -18,6 +18,7 @@ function Google() {
                     placeholder="Search on Google"
                     required="required"
                     type="text"
+                    autoFocus
                 />
                 <button class="button" type="submit">
                     Search
