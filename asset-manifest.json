@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/rios-dashboard/static/css/main.4cb4adc3.css",
-    "main.js": "/rios-dashboard/static/js/main.ecef9b9d.js",
+    "main.css": "/rios-dashboard/static/css/main.3d9d482e.css",
+    "main.js": "/rios-dashboard/static/js/main.26d820f3.js",
     "index.html": "/rios-dashboard/index.html",
-    "main.4cb4adc3.css.map": "/rios-dashboard/static/css/main.4cb4adc3.css.map",
-    "main.ecef9b9d.js.map": "/rios-dashboard/static/js/main.ecef9b9d.js.map"
+    "main.3d9d482e.css.map": "/rios-dashboard/static/css/main.3d9d482e.css.map",
+    "main.26d820f3.js.map": "/rios-dashboard/static/js/main.26d820f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cb4adc3.css",
-    "static/js/main.ecef9b9d.js"
+    "static/css/main.3d9d482e.css",
+    "static/js/main.26d820f3.js"
   ]
 }
