@@ -2,7 +2,6 @@ import './App.css';
 import DateAndTime from './DateTime';
 import Google from './Google';
 import ShowWeather from './Weather';
-import AddNewLink from './AddLink';
 import ToDoList from './toDoList';
 import Greeting from './components/Greeting';
 import ClickForComponent from './components/ClickForComponent';
