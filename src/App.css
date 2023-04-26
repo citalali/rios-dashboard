@@ -25,6 +25,7 @@
     border: solid 2px var(--border-color);
     padding: 7px;
     width: 50%;
+    background-color: var(--mid);
 }
 .singleToDos {
     border: solid 3px var(--border-color);
@@ -33,12 +34,26 @@
 #weatherDiv {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    display: none;
+    zoom: 0.8;
     background-color: var(--mid);
-    zoom: 0.6;
+    border: solid 5px var(--border-color);
 }
 
-#linkList {
+#dogDiv {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    background-color: var(--mid);
+    border: solid 5px var(--border-color);
+}
+
+#dogPictureId {
+    object-fit: contain;
+}
+#SettingsList {
     border: solid 2px var(--border-color);
     width: fit-content;
     height: fit-content;
@@ -47,13 +62,15 @@
     color: black;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    display: none;
+    background-color: var(--mid);
 }
 
 button {
     background-color: var(--mid);
     color: var(--highlight);
-    border-color: var(--highlight);
+    border-color: var(--border-color);
     border-radius: 8px;
     border-width: 5px;
     margin: 5px;
@@ -80,4 +97,100 @@ input {
 
 .App-link {
     color: var(--highlight);
+}
+
+#weatherDiv:hover {
+    zoom: 1.1;
+}
+
+.toDoDiv {
+    display: none;
+}
+
+.hide {
+    font-size: medium;
+    font-weight: 1000;
+    color: var(--border-color);
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid 2px var(--border-color);
+}
+
+#hideToDo {
+    left: 0;
+    top: 0;
+}
+
+#hideSettings {
+    left: 0;
+    bottom: 0;
+    margin: 5px;
+}
+.SettingsForm {
+    margin: 25px;
+}
+
+.clickForDiv {
+    font-weight: 800;
+    color: var(--border-color);
+    position: absolute;
+    margin: 0%;
+    padding: 3%;
+    background-color: var(--mid);
+    border: solid 3px var(--border-color);
+}
+
+.clickForWeather {
+    left: 0;
+    top: 0;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.clickForWeather:hover {
+    padding: 5%;
+    cursor: pointer;
+}
+
+.clickForDog {
+    left: 0;
+    bottom: 0;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+.clickForDog:hover {
+    padding: 5%;
+    cursor: pointer;
+}
+
+.clickForToDo {
+    right: 0;
+    bottom: 0;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+.clickForToDo:hover {
+    padding: 5%;
+    cursor: pointer;
+}
+
+.clickForSettings {
+    right: 0;
+    top: 0;
+    border-top: 0px;
+    border-right: 0px;
+}
+.clickForSettings:hover {
+    cursor: pointer;
+    padding: 5%;
+}
+
+.ChangeColoursDiv {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
 }

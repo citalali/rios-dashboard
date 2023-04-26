@@ -13,16 +13,30 @@ const ToDoList = () => {
         setToDoArray([...toDoArray, newTask]);
         setTask('');
     };
+    const handleDelete = (index) => {
+        const newToDoArray = [...toDoArray];
+        newToDoArray.splice(index, 1);
+        setToDoArray(newToDoArray);
+    };
 
-    const showToDos = toDoArray.map((toDoArray) => (
+    const showToDos = toDoArray.map((toDoArray, index) => (
         <div className="singleToDos">
-            <input type="checkbox" id={toDoArray}></input>
-            <label for={toDoArray}>{toDoArray}</label>
+            <label htmlFor={toDoArray}>{toDoArray}</label>
+            <button htmlFor={toDoArray} onClick={() => handleDelete(index)}>
+                DONE
+            </button>
         </div>
     ));
+    const handleHide = () => {
+        document.getElementById('toDoDiv').style.display = 'none';
+        document.getElementById('toDoLogo').style.display = 'block';
+    };
 
     return (
         <div className="textColour toDoComponent">
+            <p id="hideToDo" className="hide" onClick={handleHide}>
+                X
+            </p>
             <p>To-Do List</p>
             <form onSubmit={handleSubmit}>
                 <input
@@ -32,8 +46,8 @@ const ToDoList = () => {
                     onChange={handleChange}
                 />
                 <button>Submit</button>
-                <ul>{showToDos}</ul>
             </form>
+            <ul>{showToDos}</ul>
         </div>
     );
 };

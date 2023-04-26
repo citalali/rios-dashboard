@@ -10,8 +10,13 @@ function ShowWeather() {
         unit: 'metric', // values are (M,S,I)
     });
 
+    const handleHide = () => {
+        document.getElementById('weatherDiv').style.display = 'none';
+        document.getElementById('weatherLogo').style.display = 'block';
+    };
+
     return (
-        <div>
+        <div onClick={handleHide}>
             <ReactWeather
                 theme={customStyles}
                 data={data}
