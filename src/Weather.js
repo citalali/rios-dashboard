@@ -3,11 +3,11 @@ import ReactWeather, { useVisualCrossing } from 'react-open-weather';
 
 function ShowWeather() {
     const { data } = useVisualCrossing({
-        key: 'W8KUDHKPGT97M5GTAUTA4SBRS', //unsafe!!! put in env file
+        key: 'W8KUDHKPGT97M5GTAUTA4SBRS', //unsafe! put in env file
         lat: '52.4899',
         lon: '13.3532',
         lang: 'en',
-        unit: 'metric', // values are (M,S,I)
+        unit: 'metric',
     });
 
     const handleHide = () => {

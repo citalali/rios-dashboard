@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 const Settings = ({ onHandleSubmit }) => {
     const [name, setName] = useState('');
-    //const [nameList, setNameList] = useState('');
 
     const handleChange = (event) => {
         setName(event.target.value);
@@ -10,9 +9,13 @@ const Settings = ({ onHandleSubmit }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        //setNameList(name);
-
         onHandleSubmit(name);
+        localStorage.setItem('userName', name);
+    };
+    const handleDelete = () => {
+        setName('');
+        onHandleSubmit(name);
+        localStorage.removeItem('userName');
     };
     const handleHide = () => {
         document.getElementById('SettingsList').style.display = 'none';
@@ -32,6 +35,7 @@ const Settings = ({ onHandleSubmit }) => {
                 />
                 <button>Submit</button>
             </form>
+            <button onClick={handleDelete}>Delete</button>
         </div>
     );
 };

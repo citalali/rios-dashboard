@@ -11,7 +11,8 @@ import ChangeTheme from './components/ChangeTheme';
 import React, { useState } from 'react';
 
 function App() {
-    const [name, setName] = useState('');
+    var [name, setName] = useState('');
+    name = localStorage.getItem('userName');
     const handleSubmitChange = (newName) => {
         console.log('New Name;', newName);
         setName(newName);
@@ -24,7 +25,6 @@ function App() {
                     <Greeting name={name} />
                     <Google />
                     <DateAndTime />
-
                     <ClickForComponent
                         elementId="weatherLogo"
                         bigDiv="weatherDiv"
