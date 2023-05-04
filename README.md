@@ -5,7 +5,7 @@ This is a Personal Dashboard built with React, which includes a To-Do List, a we
 Features
 
 Name Input:
-You can input your name in the Settings section of the dashboard. Once you submit your name, it will be displayed in the Greeting section of the dashboard.
+You can input your name in the Settings section of the dashboard. Once you submit your name, it will be displayed in the Greeting section of the dashboard and saved in local storage. When you press delete it will be removed from local storage. 
 
 Weather Extension:
 You can view the current weather by clicking the Weather button on the upper left of the dashboard. This will display the current temperature, weather condition, and wind speed for your current location.
